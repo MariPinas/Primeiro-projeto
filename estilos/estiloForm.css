@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    background-color: grey;
+    color:wheat;
+    padding: 20px;
+}
+header h1{
+    margin: 0;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+form {
+    width: 40%;
+    margin: 50px auto;
+    background-color: wheat;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px dashed whitesmoke;
+}
+h3{
+    font-size: 30px;
+    font-style: italic;
+    color: burlywood;
+    
+}
+input[type="tel"]{
+    width: 50%;
+}
+label{
+    padding: 4px;
+}
+input{
+    /* input é inline */
+    border: none;
+    background-color: burlywood;
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+/*input[type="date"]{
+    
+}*/
+input[type="submit"]{
+    /* background: linear-gradient(to top right,chocolate 30%, whitesmoke); */
+    background-color:chocolate;
+    margin: 10px auto;
+    width: 50%;
+    /*display: block;
+    margin: auto;   isso seria para deixar só o botao "cadastrar" no centro */
+}
+#nome, #e_mail{
+    text-align: center;
+}
+/* fieldset[id="conjunto2"]{
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+}  nao precisa mais, agr tenho que tentar colocar no meiao sabe*/
+fieldset{
+    border: 3px dashed whitesmoke;
+    padding: 5px;
+    width: 45%;
+    height: 170px;
+    display: inline-block;
+    vertical-align: top;
+}
