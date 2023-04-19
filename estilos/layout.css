@@ -23,6 +23,12 @@ nav ul li{
     display: inline-block;
     margin-right: 20px;
 }
+section{
+    background-color: rgb(240, 240, 240);
+}
+#image1{
+    padding-right: 20px;
+}
 main{
     display: flex;
     padding: 10px;
@@ -32,7 +38,7 @@ aside{
     position: fixed;
     width: 180px;
     height: 50px;
-    top: 85px;
+    top: 90px;
     padding: 10px;
     right: 0;
 
@@ -42,12 +48,14 @@ aside ul{
     list-style: none;
 }
 footer{
-    /*margin: 100px;*/
+    display: block;
+    margin-top: 100px;
     background-color: rgb(161, 108, 211);
     color: rgb(221, 238, 223);
     text-align: center;
     padding: 10px;
 }
+
 a{
     text-decoration: none;
 }
