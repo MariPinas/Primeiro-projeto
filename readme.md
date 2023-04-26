@@ -1,1 +1,1 @@
-ndasdnasdjkasdnas
+Agora, eu acabei de mudar o menu colocando na esquerda, com uns efeitos no link que pretendo melhorar, ajustei o problema anterior que era o main estar todo desconfigurado e adicionei botoes na direita, melhores estilizados.

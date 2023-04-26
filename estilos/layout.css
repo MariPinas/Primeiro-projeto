@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -8,60 +9,144 @@ body{
 }
 header{
     background-color: rgb(161, 108, 211);
-    color:rgb(221, 238, 223);
+    color:rgb(255, 255, 255);
     padding: 20px;
 }
 header h1{
     margin: 0;
+    text-align: center;
 }
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-nav ul li{
-    display: inline-block;
-    margin-right: 20px;
+nav {
+    float: left;
+    width: 15% auto;
+    padding: 20px;
+    background-color: rgb(161, 108, 211);
+    color: white;
+    height: 800px; /*propriedade utilizada apenas para visualização*/
 }
 section{
     background-color: rgb(240, 240, 240);
 }
+#section1{
+    padding-right: 85px;
+}
+#section2{
+    /*oi*/
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;  
+}
 #image1{
     padding-right: 20px;
 }
+#image2{
+    padding-right: 10px;
+}
 main{
+    float: middle;
     display: flex;
-    padding: 10px;
+    padding: 10px 5px;
     justify-content: space-between;
+    width: 60%;
 }
 aside{
     position: fixed;
     width: 180px;
     height: 50px;
-    top: 90px;
+    top: 110px;
     padding: 10px;
     right: 0;
-
+    text-align: center;
+    
 }
 aside ul{
+    padding: 20px;
     margin: 0;
     list-style: none;
 }
-footer{
-    display: block;
-    margin-top: 100px;
-    background-color: rgb(161, 108, 211);
-    color: rgb(221, 238, 223);
-    text-align: center;
-    padding: 10px;
-}
 
+#insta {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    background-image: linear-gradient(to right, #405DE6, #833AB4, #E1306C, #f79d37);
+}
+#linkedin {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #0077b5, #00a0dc, #c0dbf5);
+}
+#github{
+    background-color: rgb(131, 58, 180);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    background-image: linear-gradient(to right, #171515, #1f1e1e,#373535, #505050);
+}
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(161, 108, 211);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 10px;
+    position: fixed;
+}
 a{
     text-decoration: none;
 }
-a{
-    color: rgb(99, 27, 134);
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 150px;
 }
-a:visited{
-    color:rgb(107, 57, 141);
+/*posicionamento dos itens da lista para depois posicionar o submenu*/
+ul li{
+    position: relative;
+}
+/*Posicionando o menu do lado direito*/
+li ul{
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+/* Melhorando a aparencia do menu mas ele ainda não aparecerá*/
+ul li a{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(82, 34, 145, 0.5);
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/*Exibindo o submenu*/
+li:hover ul{
+    display: block;
+}
+/*Estilizando o evento hover*/
+ul li a:hover{
+    text-decoration: underline;
+    font-weight:bold;
+    background-color: rgb(125, 85, 189);
+}
+@media (max-width:600px){
+    nav, main, aside {
+        width: 100%;
+        height: auto;
+    }
 }

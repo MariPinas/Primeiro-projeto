@@ -7,9 +7,10 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header{
-    background-color: grey;
-    color:wheat;
+    background-color:rgb(161, 108, 211);
+    color:rgb(255, 255, 255);
     padding: 20px;
+    text-align: center;
 }
 header h1{
     margin: 0;
@@ -27,7 +28,7 @@ nav ul li{
 form {
     width: 40%;
     margin: 50px auto;
-    background-color: wheat;
+    background-color: rgba(164, 72, 250, 0.514);
     text-align: center;
     border-radius: 10px;
     border: 3px dashed whitesmoke;
@@ -35,7 +36,7 @@ form {
 h3{
     font-size: 30px;
     font-style: italic;
-    color: burlywood;
+    color: rgb(161, 108, 211);
     
 }
 input[type="tel"]{
@@ -47,7 +48,7 @@ label{
 input{
     /* input é inline */
     border: none;
-    background-color: burlywood;
+    background-color: rgb(255, 255, 255);
     width: 70%;
     padding: 10px;
     margin-bottom: 20px;
@@ -58,7 +59,7 @@ input{
 }*/
 input[type="submit"]{
     /* background: linear-gradient(to top right,chocolate 30%, whitesmoke); */
-    background-color:chocolate;
+    background-color:rgb(255, 255, 255);
     margin: 10px auto;
     width: 50%;
     /*display: block;
@@ -74,10 +75,24 @@ input[type="submit"]{
     vertical-align: top;
 }  nao precisa mais, agr tenho que tentar colocar no meiao sabe*/
 fieldset{
-    border: 3px dashed whitesmoke;
+    border: 3px dashed rgb(255, 255, 255);
     padding: 5px;
     width: 45%;
     height: 170px;
     display: inline-block;
     vertical-align: top;
+}
+footer{
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(161, 108, 211);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 10px;
+    position: fixed;
+}
+a{
+    text-decoration: none;
+    color: white;
 }
