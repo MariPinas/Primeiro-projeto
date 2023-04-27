@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -15,6 +14,7 @@ header{
 header h1{
     margin: 0;
     text-align: center;
+    text-shadow: mediumslateblue 3px 1px;
 }
 nav {
     float: left;
@@ -44,6 +44,10 @@ section::after {
 #image2{
     padding-right: 10px;
 }
+#gato{
+    width: 10%;
+    float: right;
+}
 main{
     float: middle;
     display: flex;
@@ -55,7 +59,7 @@ aside{
     position: fixed;
     width: 180px;
     height: 50px;
-    top: 110px;
+    top: 160px;
     padding: 10px;
     right: 0;
     text-align: center;
@@ -73,7 +77,7 @@ aside ul{
     border-radius: 10px;
     color: white;
     display: inline-block;
-    background-image: linear-gradient(to right, #405DE6, #833AB4, #E1306C, #f79d37);
+    background-image: linear-gradient(to right, #6c40e6, #833AB4, #e13c30, #f79437);
 }
 #linkedin {
     padding: 10px 15px;
@@ -82,17 +86,16 @@ aside ul{
     color: white;
     margin-top: 10px;
     display: inline-block;
-    background-image: linear-gradient(to right, #0077b5, #00a0dc, #c0dbf5);
+    background-image: linear-gradient(to right, #0077b5, #00a0dc, #3f83c2);
 }
 #github{
-    background-color: rgb(131, 58, 180);
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
     color: white;
     margin-top: 10px;
     display: inline-block;
-    background-image: linear-gradient(to right, #171515, #1f1e1e,#373535, #505050);
+    background-image: linear-gradient(to right, #171515,#353535 ,#373535,#1f1e1e );
 }
 footer{
     width: 100%;

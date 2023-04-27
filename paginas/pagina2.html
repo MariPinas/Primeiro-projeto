@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../estilos/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="../estilos/layout.css" />
     <title>Página 2</title>
+    <style>
+        [title~=carro]{
+            border: 5px solid red;
+        }
+        article.c1 p#i3 {color: blue;}
+        div.caixa{
+            width: 300px;
+            height: 200px;
+            border: solid #C0C0C0 1px;
+           float: left;
+        }
+        h3.tit::first-letter{
+            color: #a200ff;
+            font-size: 300%;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Página 2</h1>
@@ -27,6 +45,21 @@
             <p>Conteúdo do artigo 2</p>
         </section>
     </main>
+    <article id="i1" class="c1">
+        <h3 id="i2" class="c2">
+            <p id="i3" class="c3">IFSP</p>
+        </h3>
+    </article>
+
+    <div class="caixa">oi</div>
+    <div class="caixa">oi</div>
+    <div class="caixa">oi</div>    
+    <img src="../imagens/cat1Artigo.jpg" title="viagem de carro ">
+    <img src="../imagens/cat2FoodArtigo.jpg" title="carro">
+    <br>
+    <br>
+    <h3 class="tit">Texto 1</h3>
+    <p>Deus e fiel</p>
     <aside>
         <h2>Barra Lateral</h2>
         <ul>
@@ -39,4 +72,5 @@
         <p>Copyright 2023 Meu site</p>
     </footer>
 </body>
+
 </html>
